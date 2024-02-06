@@ -1,0 +1,35 @@
+.market{
+    width: 100%;
+    height: 130px;
+}
+.market .marketcenter{
+    width: 80%;
+    height: inherit;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.market .marketcenter div{
+    display: flex;
+    width: inherit;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+.market .marketcenter a{
+    text-decoration: none;
+}
+.market .marketcenter a img{
+    width: 50px;
+    height: 50px;
+    border-radius: 16px;
+    margin-bottom: 10px;
+}
+.market .marketcenter h5{
+    font-size: var(--font-family);
+    color: #2b2b2b;
+    opacity: 0.8;
+    font-size: 12px;
+}

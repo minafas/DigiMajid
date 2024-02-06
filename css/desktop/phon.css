@@ -1,0 +1,14 @@
+.phone{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #EF3A4F;
+    position: fixed;
+    z-index: 1000;
+    bottom: 100px;
+    left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    }
