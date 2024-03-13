@@ -1,6 +1,7 @@
 .wonderfull{
     width: 100%;
     height: 300px;
+   
 }
 .wonder__center{
     width: 80%;
@@ -46,6 +47,9 @@
   justify-content: center;
   column-gap: 5px;
 }
+.wonder{
+    border-radius: 15px;
+}
 .wonder a{
     text-decoration: none;
     display: flex;
@@ -53,7 +57,7 @@
     row-gap: 5px;
 }
 .wonder img{
-    width: 80%;
+    width: 90%;
 }
 .wonder div{
     display: flex;

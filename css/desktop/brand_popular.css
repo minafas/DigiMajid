@@ -1,0 +1,21 @@
+.brand_popular {
+  width: 80%;
+  height: 200px;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+
+  & p {
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: BINAZANIN;
+  }
+  & img {
+    display: inline-block;
+    width: 110px;
+    padding: 0 10px;
+  }
+}

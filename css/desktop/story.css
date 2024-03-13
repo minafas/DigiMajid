@@ -1,9 +1,10 @@
 .story{
     width: 100%;
-    height: 180px;
+    height: 230px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    z-index: 955566;
 }
 .story .centerstory{
     width: 80%;

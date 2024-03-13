@@ -1,36 +1,65 @@
-.topic{
-    width: 100%;
-    height: 350px;
-    flex-flow: column wrap !important;
-    justify-content: center;
-    margin-top: 20px;
-}
-.topic .topic__child{
-    width: 80%;
-    height: inherit;
-     margin: 0 auto;
-    border: 1px solid #e0e0e2;
-    border-radius: 15px;
-}
-.topic__child__top, .topic__child__center,.topic__child__bottom{
+.topic {
+  width: 100%;
+  height: 350px;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin-top: 20px;
+  padding-top: 30px;
+  border-radius: 10PX;
+  margin-bottom: 20px;
+  .topicـtop {
+    width: inherit;
+    height: 60px;
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
-    column-gap: 5px;
+    margin: 0 auto;
+    & P {
+      font-size: 35px;
+      display: flex;
+      flex-flow: row wrap;
+      color: black;
+      font-family: BINAZANIN;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
-.topic__child__top img, .topic__child__center img,.topic__child__bottom img{
-    width: 86px;
-    height: 86px;
+.topic .topic__child {
+  width: 80%;
+  height: inherit;
+  margin: 0 auto;
+  border: 1px solid #e0e0e2;
+  border-radius: 15px;
 }
-.topic__child__top span, .topic__child__center span,.topic__child__bottom span{
-    font-size: 20px;
-    color: aqua;
-    font-weight: bold;
-    font-family: var(--font-family-number);
+.topic__child__top,
+.topic__child__center,
+.topic__child__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  column-gap: 5px;
 }
-.topic__child__top p, .topic__child__center p,.topic__child__bottom p{
-font-family: var(--font-family);
-font-size: 12px;
-font-weight: bold;
+.topic__child__top img,
+.topic__child__center img,
+.topic__child__bottom img {
+  width: 86px;
+  height: 86px;
+}
+.topic__child__top span,
+.topic__child__center span,
+.topic__child__bottom span {
+  font-size: 20px;
+  color: aqua;
+  font-weight: bold;
+  font-family: var(--font-family-number);
+}
+.topic__child__top p,
+.topic__child__center p,
+.topic__child__bottom p {
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: bold;
 }
