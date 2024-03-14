@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Iran;
+  src: url("../fonts/IRANYEKAN/IRANYekanWeb.eot");
+  src: url("../fonts/IRANYEKAN/IRANYekanWeb.ttf");
+  src: url("../fonts/IRANYEKAN/IRANYekanWeb.woff");
+  src: url("../fonts/IRANYEKAN/IRANYekanWeb.woff2");
+}
+body {
+  font-family: Iran, sans-serif !important;
+}

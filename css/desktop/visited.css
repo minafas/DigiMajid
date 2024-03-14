@@ -1,249 +1,243 @@
 .visited {
   width: 100%;
-  height: 400px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
   align-items: center;
   margin: 0 auto;
-  padding-top: 20px;
-.mobile {
-  display: flex;
-  flex-flow: row wrap;
-  width: 20%;
-  height: inherit;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #e0e0e2;
-  border-radius: 15px;
-  padding-right: 50px;
-  & h1 {
-    width: 300px;
-    font-family: BINAZANIN;
-    font-size: 25px;
-    margin-left: 30px;
-  }
-  & P {
-    font-family: BINAZANIN;
-    font-weight: bold;
-    padding-right: 20px;
-    opacity: 0.5;
-  }
-  .mobile_center {
+  gap: 10px;
+  .mobile {
     display: flex;
-    flex-flow: row wrap;
-    column-gap: 1px;
-    & img {
-      display: inline-block;
-      width: 130px;
-      height: 130px;
-      padding: 8px;
-    }
-  }
-}
-.mobile_bottom {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  & a {
-    display: flex;
-    flex-flow: row wrap;
-    text-decoration: none;
-    justify-content: center;
+    flex-flow: column wrap;
+    width: 20%;
     align-items: center;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: BINAZANIN;
-    color: #19bfd3;
-    & svg g {
-      fill: #19bfd3;
-    }
-  }
-}
-
-.cover {
-  display: flex;
-  flex-flow: row wrap;
-  width: 20%;
-  height: inherit;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #e0e0e2;
-  border-radius: 15px;
-  padding-right: 50px;
-  & h1 {
-    width: 300px;
-    font-family: BINAZANIN;
-    font-size: 25px;
-    margin-left: 30px;
-  }
-  & P {
-    font-family: BINAZANIN;
-    font-weight: bold;
-    padding-right: 20px;
-    opacity: 0.5;
-  }
-  .cover_center {
-    display: flex;
-    flex-flow: row wrap;
-    column-gap: 1px;
-    & img {
-      display: inline-block;
-      width: 130px;
-      height: 130px;
-      padding: 8px;
-    }
-  }
-  .cover_bottom {
-    display: flex;
-    flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
-    & a {
+    border: 1px solid #e0e0e2;
+    border-radius: 15px;
+    padding: 10px;
+    & h1 {
+      font-family: Iran;
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    & P {
+      font-family: Iran;
+      font-weight: bold;
+      opacity: 0.5;
+    }
+    .mobile_center {
       display: flex;
       flex-flow: row wrap;
-      text-decoration: none;
+      column-gap: 1px;
+      & img {
+        display: inline-block;
+        width: 130px;
+        height: 130px;
+        padding: 8px;
+      }
+    }
+    .mobile_bottom {
+      display: flex;
+      flex-flow: row wrap;
       justify-content: center;
       align-items: center;
-      font-size: 20px;
-      font-weight: bold;
-      font-family: BINAZANIN;
-      color: #19bfd3;
-      & svg g {
-        fill: #19bfd3;
+      & a {
+        display: flex;
+        flex-flow: row wrap;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: BINAZANIN;
+        color: #19bfd3;
+        & svg g {
+          fill: #19bfd3;
+        }
       }
     }
   }
-}
-.headset {
-  display: flex;
-  flex-flow: row wrap;
-  width: 20%;
-  height: inherit;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #e0e0e2;
-  border-radius: 15px;
-  padding-right: 50px;
-  & h1 {
-    width: 300px;
-    font-family: BINAZANIN;
-    font-size: 25px;
-    margin-left: 30px;
-  }
-  & P {
-    font-family: BINAZANIN;
-    font-weight: bold;
-    padding-right: 20px;
-    opacity: 0.5;
-  }
-  .headset_top {
+  .cover {
     display: flex;
     flex-flow: row wrap;
-    column-gap: 1px;
-    & img {
-      display: inline-block;
-      width: 130px;
-      height: 130px;
-      padding: 8px;
-    }
-  }
-  .headset_center {
-    display: flex;
-    flex-flow: row wrap;
-    column-gap: 1px;
-    & img {
-      display: inline-block;
-      width: 130px;
-      height: 130px;
-      padding: 8px;
-    }
-  }
-  .headset_bottom {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    width: 20%;
+    height: inherit;
     align-items: center;
-    & a {
+    justify-content: center;
+    border: 1px solid #e0e0e2;
+    border-radius: 15px;
+    padding: 10px;
+    & h1 {
+      font-family: Iran;
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 10px;
+      margin-left: 30px;
+    }
+    & P {
+      font-family: Iran;
+      font-weight: bold;
+      opacity: 0.5;
+    }
+    .cover_center {
       display: flex;
       flex-flow: row wrap;
-      text-decoration: none;
+      column-gap: 1px;
+      & img {
+        display: inline-block;
+        width: 130px;
+        height: 130px;
+        padding: 8px;
+      }
+    }
+    .cover_bottom {
+      display: flex;
+      flex-flow: row wrap;
       justify-content: center;
       align-items: center;
-      font-size: 20px;
-      font-weight: bold;
-      font-family: BINAZANIN;
-      color: #19bfd3;
-      & svg g {
-        fill: #19bfd3;
+      & a {
+        display: flex;
+        flex-flow: row wrap;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: BINAZANIN;
+        color: #19bfd3;
+        & svg g {
+          fill: #19bfd3;
+        }
       }
     }
   }
-}
-.watch {
-  display: flex;
-  flex-flow: row wrap;
-  width: 20%;
-  height: inherit;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #e0e0e2;
-  border-radius: 15px;
-  padding-right: 50px;
-  & h1 {
-    width: 300px;
-    font-family: BINAZANIN;
-    font-size: 25px;
-    margin-left: 30px;
-  }
-  & P {
-    font-family: BINAZANIN;
-    font-weight: bold;
-    padding-right: 20px;
-    opacity: 0.5;
-  }
-  .watch_top {
+  .headset {
     display: flex;
     flex-flow: row wrap;
-    column-gap: 1px;
-    & img {
-      display: inline-block;
-      width: 130px;
-      height: 130px;
-      padding: 8px;
-    }
-  }
-  .watch_center {
-    display: flex;
-    flex-flow: row wrap;
-    column-gap: 1px;
-    & img {
-      display: inline-block;
-      width: 130px;
-      height: 130px;
-      padding: 8px;
-    }
-  }
-  .watch_bottom {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    width: 20%;
+    height: inherit;
     align-items: center;
-    & a {
+    justify-content: center;
+    border: 1px solid #e0e0e2;
+    border-radius: 15px;
+    padding: 10px;
+    & h1 {
+      font-family: Iran;
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    & P {
+      font-family: Iran;
+      font-weight: bold;
+      opacity: 0.5;
+    }
+    .headset_top {
       display: flex;
       flex-flow: row wrap;
-      text-decoration: none;
+      column-gap: 1px;
+      & img {
+        display: inline-block;
+        width: 130px;
+        height: 130px;
+        padding: 8px;
+      }
+    }
+    .headset_center {
+      display: flex;
+      flex-flow: row wrap;
+      column-gap: 1px;
+      & img {
+        display: inline-block;
+        width: 130px;
+        height: 130px;
+        padding: 8px;
+      }
+    }
+    .headset_bottom {
+      display: flex;
+      flex-flow: row wrap;
       justify-content: center;
       align-items: center;
-      font-size: 20px;
-      font-weight: bold;
-      font-family: BINAZANIN;
-      color: #19bfd3;
-      & svg g {
-        fill: #19bfd3;
+      & a {
+        display: flex;
+        flex-flow: row wrap;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: BINAZANIN;
+        color: #19bfd3;
+        & svg g {
+          fill: #19bfd3;
+        }
       }
     }
   }
-}
+  .watch {
+    display: flex;
+    flex-flow: column wrap;
+    width: 20%;
+    height: inherit;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e0e0e2;
+    border-radius: 15px;
+    padding: 10px;
+    & h1 {
+      font-family: Iran;
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    & P {
+      font-family: Iran;
+      font-weight: bold;
+      opacity: 0.5;
+    }
+    .watch_top {
+      display: flex;
+      flex-flow: column wrap;
+      column-gap: 1px;
+      & img {
+        display: inline-block;
+        width: 130px;
+        height: 130px;
+        padding: 8px;
+      }
+    }
+    .watch_center {
+      display: flex;
+      flex-flow: row wrap;
+      column-gap: 1px;
+      & img {
+        display: inline-block;
+        width: 130px;
+        height: 130px;
+        padding: 8px;
+      }
+    }
+    .watch_bottom {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      & a {
+        display: flex;
+        flex-flow: row wrap;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: BINAZANIN;
+        color: #19bfd3;
+        & svg g {
+          fill: #19bfd3;
+        }
+      }
+    }
+  }
 }

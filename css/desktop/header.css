@@ -1,10 +1,11 @@
 header {
   width: 100%;
-  height: 170px;
   position: sticky;
   background-color: #ffffff;
   z-index: 2;
   top: 0;
+  font-family: Iran !important;
+  box-shadow: 0 0 3px lightgray;
 }
 header .banner {
   width: 100%;
@@ -45,7 +46,7 @@ header .center .search input[type="text"] {
   padding-right: 60px;
 }
 header .center .search input[type="text"]::placeholder {
-  font-family: IRANYEKAN;
+  font-family: Iran;
   font-size: 12px;
 }
 header .center .login {
@@ -65,7 +66,7 @@ header .center .login a {
   text-align: center;
   line-height: 40px;
   text-decoration: none;
-  font-family: IRANYEKAN;
+  font-family: Iran !important;
   font-size: 12px;
   color: black;
   font-weight: bold;
@@ -94,13 +95,13 @@ header .center .login .basket svg {
 }
 .menu {
   width: 100%;
-  height: 50px;
+  height: fit-content;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  align-items: center;
   .menu__right {
-    width: 90%;
-    height: inherit;
+    width: 80%;
     .menu__nav {
       width: inherit;
       height: inherit;
@@ -112,6 +113,7 @@ header .center .login .basket svg {
       .menu__item {
         width: fit-content;
         height: inherit;
+        border-bottom: 2px solid transparent;
         &:hover {
           border-bottom: 2px solid red;
         }
@@ -122,12 +124,12 @@ header .center .login .basket svg {
           line-height: 50px;
           text-decoration: none;
           font-size: 13px;
-          font-family: IRANYEKAN;
+          font-family: Iran !important;
           color: #2b2b2b;
           font-weight: 500px;
         }
         .sub__menu {
-          width: 90%;
+          width: 70vw;
           height: 0;
           background-color: rgb(236, 234, 234);
           position: absolute;
@@ -135,7 +137,7 @@ header .center .login .basket svg {
           .sub__menu__parent {
             width: 20%;
             height: 100%;
-            overflow: auto;
+            overflow-y: scroll;
             direction: ltr;
             .sub__menu__child {
               width: 100%;
@@ -154,7 +156,7 @@ header .center .login .basket svg {
                 display: block;
                 width: 100%;
                 text-decoration: none;
-                font-family: IRANYEKAN;
+                font-family: Iran !important;
                 text-align: right;
                 line-height: 50px;
                 font-size: 12px;
@@ -190,23 +192,22 @@ header .center .login .basket svg {
                     font-size: 20px;
                     font-weight: bold;
                     color: #19bfd3;
-                    font-family: BINAZANIN;
+                    font-family: Iran !important;
                     padding-right: 30px;
                   }
                 }
                 .sub__sub__menu__child {
                   width: 25%;
-                  height: 90%;
+                  height: 100%;
                   background-color: rgb(236, 234, 234);
                   direction: ltr;
                   text-align: right;
-                  overflow: auto;
                   & span {
                     display: inline-block;
                     width: fit-content;
                     height: 40px;
                     font-size: 15px;
-                    font-family: IRANYEKAN;
+                    font-family: Iran !important;
                     line-height: 40px;
                     margin-top: 10px;
                     font-weight: 800px;
@@ -222,7 +223,7 @@ header .center .login .basket svg {
                     font-weight: bold;
                     line-height: 40px;
                     padding-right: 5px;
-                    font-family: IRANYEKAN;
+                    font-family: Iran !important;
                     color: #2b2b2b;
                     &:hover {
                       color: red;
@@ -242,284 +243,286 @@ header .center .login .basket svg {
       }
     }
   }
-}
-.menu__left {
-  width: 10%;
-  height: 50px;
-  font-family: var(--font-family);
-  font-size: 12px;
-  padding-left: 10px;
-  .cities {
-    align-items: center;
-    flex-flow: row wrap;
+  .menu__left {
     display: flex;
-    column-gap: 5px;
-    label[for="show"] {
-      cursor: pointer;
-    }
-    label[for="close"] {
-      display: inline-block;
-      width: 40px;
-      height: 40px;
-      position: absolute;
-      left: 0;
-      top: 0;
-      cursor: pointer;
-      text-align: center;
-      font-size: 40px;
-      color: #424750;
-    }
-    .select__town {
-      width: 600px;
-      height: 800px;
-      background-color: #ffffff;
-      display: none;
-      position: absolute;
-      inset: 0;
-      margin: 50px auto;
-      overflow: auto;
-      overflow-x: hidden;
-      direction: ltr;
-      .select__state {
-        width: inherit;
-        height: 80px;
-        background-color: #ffffff;
-        box-sizing: border-box;
-        border-bottom: 2px solid #efeff0;
-        font-family: BINAZANIN;
-        align-items: center;
-        display: flex;
-        flex-flow: row-reverse wrap;
-        font-size: 30px;
-        font-weight: bold;
-        padding: 20px;
-        color: black;
-        opacity: 0.8;
+    width: 15%;
+    font-family: var(--font-family);
+    font-size: 12px;
+    padding-left: 10px;
+    .cities {
+      align-items: center;
+      flex-flow: row wrap;
+      display: flex;
+      column-gap: 5px;
+      font-family: Iran !important;
+      label[for="show"] {
+        cursor: pointer;
       }
-      .town__child {
-        width: inherit;
-        height: inherit;
+      label[for="close"] {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        cursor: pointer;
+        text-align: center;
+        font-size: 40px;
+        color: #424750;
+      }
+      .select__town {
+        width: 600px;
+        height: 800px;
         background-color: #ffffff;
-        display: flex;
-        box-sizing: border-box;
-        flex-flow: column wrap;
-        .location {
+        display: none;
+        position: absolute;
+        inset: 0;
+        margin: 50px auto;
+        overflow: auto;
+        overflow-x: hidden;
+        direction: ltr;
+        .select__state {
           width: inherit;
           height: 80px;
-          border-bottom: 3px solid #efeff0;
           background-color: #ffffff;
+          box-sizing: border-box;
+          border-bottom: 2px solid #efeff0;
           font-family: BINAZANIN;
           align-items: center;
           display: flex;
-          box-sizing: border-box;
           flex-flow: row-reverse wrap;
-          font-size: 25px;
+          font-size: 30px;
           font-weight: bold;
-          color: #19bfd6;
+          padding: 20px;
+          color: black;
           opacity: 0.8;
-          padding-right: 20px;
-          & span {
-            display: flex;
+        }
+        .town__child {
+          width: inherit;
+          height: inherit;
+          background-color: #ffffff;
+          display: flex;
+          box-sizing: border-box;
+          flex-flow: column wrap;
+          .location {
+            width: inherit;
+            height: 80px;
+            border-bottom: 3px solid #efeff0;
+            background-color: #ffffff;
+            font-family: BINAZANIN;
             align-items: center;
-            column-gap: 20px;
+            display: flex;
             box-sizing: border-box;
-          }
-        }
-        .town__child__1 {
-          width: inherit;
-          height: 60px;
-          display: flex;
-          flex-flow: row wrap;
-          justify-content: space-between;
-          font-size: 20px;
-          font-family: IRANYEKAN;
-          padding: 40px;
-          font-weight: bold;
-          opacity: 0.9;
-          border-bottom: 3px solid #efeff0;
-          cursor: pointer;
-          box-sizing: border-box;
-          & span {
-            display: flex;
             flex-flow: row-reverse wrap;
-            column-gap: 360px;
-            align-items: center;
+            font-size: 25px;
+            font-weight: bold;
+            color: #19bfd6;
+            opacity: 0.8;
+            padding-right: 20px;
+            & span {
+              display: flex;
+              align-items: center;
+              column-gap: 20px;
+              box-sizing: border-box;
+            }
           }
-        }
-        .town__child__2 {
-          width: inherit;
-          height: 60px;
-          display: flex;
-          flex-flow: row wrap;
-          justify-content: space-between;
-          font-size: 20px;
-          font-family: IRANYEKAN;
-          padding: 40px;
-          font-weight: bold;
-          opacity: 0.9;
-          border-bottom: 3px solid #efeff0;
-          cursor: pointer;
-          box-sizing: border-box;
-          & span {
+          .town__child__1 {
+            width: inherit;
+            height: 60px;
             display: flex;
             flex-flow: row wrap;
-            column-gap: 360px;
-            align-items: center;
-            flex-flow: row-reverse wrap;
+            justify-content: space-between;
+            font-size: 20px;
+            font-family: Iran !important;
+            padding: 40px;
+            font-weight: bold;
+            opacity: 0.9;
+            border-bottom: 3px solid #efeff0;
+            cursor: pointer;
+            box-sizing: border-box;
+            & span {
+              display: flex;
+              flex-flow: row-reverse wrap;
+              column-gap: 360px;
+              align-items: center;
+            }
           }
-        }
-        .town__child__3 {
-          width: 600px;
-          height: 60px;
-          display: flex;
-          flex-flow: row wrap;
-          justify-content: space-between;
-          font-size: 20px;
-          font-family: IRANYEKAN;
-          padding: 40px;
-          font-weight: bold;
-          opacity: 0.9;
-          border-bottom: 3px solid #efeff0;
-          cursor: pointer;
-          box-sizing: border-box;
-          & span {
+          .town__child__2 {
+            width: inherit;
+            height: 60px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            font-size: 20px;
+            font-family: Iran !important;
+            padding: 40px;
+            font-weight: bold;
+            opacity: 0.9;
+            border-bottom: 3px solid #efeff0;
+            cursor: pointer;
+            box-sizing: border-box;
+            & span {
+              display: flex;
+              flex-flow: row wrap;
+              column-gap: 360px;
+              align-items: center;
+              flex-flow: row-reverse wrap;
+            }
+          }
+          .town__child__3 {
             width: 600px;
+            height: 60px;
             display: flex;
             flex-flow: row wrap;
-            column-gap: 440px;
-            align-items: center;
-            flex-flow: row-reverse wrap;
+            justify-content: space-between;
+            font-size: 20px;
+            font-family: Iran !important;
+            padding: 40px;
+            font-weight: bold;
+            opacity: 0.9;
+            border-bottom: 3px solid #efeff0;
+            cursor: pointer;
+            box-sizing: border-box;
+            & span {
+              width: 600px;
+              display: flex;
+              flex-flow: row wrap;
+              column-gap: 440px;
+              align-items: center;
+              flex-flow: row-reverse wrap;
+            }
           }
-        }
-        .town__child__4 {
-          width: 600px;
-          height: 60px;
-          display: flex;
-          flex-flow: row wrap;
-          justify-content: space-between;
-          font-size: 20px;
-          font-family: IRANYEKAN;
-          padding: 40px;
-          font-weight: bold;
-          opacity: 0.9;
-          border-bottom: 3px solid #efeff0;
-          cursor: pointer;
-          box-sizing: border-box;
-          & span {
+          .town__child__4 {
             width: 600px;
+            height: 60px;
             display: flex;
             flex-flow: row wrap;
-            column-gap: 430px;
-            align-items: center;
-            flex-flow: row-reverse wrap;
+            justify-content: space-between;
+            font-size: 20px;
+            font-family: Iran !important;
+            padding: 40px;
+            font-weight: bold;
+            opacity: 0.9;
+            border-bottom: 3px solid #efeff0;
+            cursor: pointer;
+            box-sizing: border-box;
+            & span {
+              width: 600px;
+              display: flex;
+              flex-flow: row wrap;
+              column-gap: 430px;
+              align-items: center;
+              flex-flow: row-reverse wrap;
+            }
           }
-        }
-        .town__child__5 {
-          width: 600px;
-          height: 60px;
-          display: flex;
-          flex-flow: row wrap;
-          justify-content: space-between;
-          font-size: 20px;
-          font-family: IRANYEKAN;
-          padding: 40px;
-          font-weight: bold;
-          opacity: 0.9;
-          border-bottom: 3px solid #efeff0;
-          cursor: pointer;
-          box-sizing: border-box;
-          & span {
+          .town__child__5 {
             width: 600px;
+            height: 60px;
             display: flex;
             flex-flow: row wrap;
-            column-gap: 400px;
-            align-items: center;
-            flex-flow: row-reverse wrap;
+            justify-content: space-between;
+            font-size: 20px;
+            font-family: Iran !important;
+            padding: 40px;
+            font-weight: bold;
+            opacity: 0.9;
+            border-bottom: 3px solid #efeff0;
+            cursor: pointer;
+            box-sizing: border-box;
+            & span {
+              width: 600px;
+              display: flex;
+              flex-flow: row wrap;
+              column-gap: 400px;
+              align-items: center;
+              flex-flow: row-reverse wrap;
+            }
           }
-        }
-        .town__child__6 {
-          width: 600px;
-          height: 60px;
-          display: flex;
-          flex-flow: row wrap;
-          justify-content: space-between;
-          font-size: 20px;
-          font-family: IRANYEKAN;
-          padding: 40px;
-          font-weight: bold;
-          opacity: 0.9;
-          border-bottom: 3px solid #efeff0;
-          cursor: pointer;
-          box-sizing: border-box;
-          & span {
+          .town__child__6 {
             width: 600px;
+            height: 60px;
             display: flex;
             flex-flow: row wrap;
-            column-gap: 400px;
-            align-items: center;
-            flex-flow: row-reverse wrap;
+            justify-content: space-between;
+            font-size: 20px;
+            font-family: Iran !important;
+            padding: 40px;
+            font-weight: bold;
+            opacity: 0.9;
+            border-bottom: 3px solid #efeff0;
+            cursor: pointer;
+            box-sizing: border-box;
+            & span {
+              width: 600px;
+              display: flex;
+              flex-flow: row wrap;
+              column-gap: 400px;
+              align-items: center;
+              flex-flow: row-reverse wrap;
+            }
           }
-        }
-        .town__child__7 {
-          width: 600px;
-          height: 60px;
-          display: flex;
-          flex-flow: row wrap;
-          justify-content: space-between;
-          font-size: 20px;
-          font-family: IRANYEKAN;
-          padding: 40px;
-          font-weight: bold;
-          opacity: 0.9;
-          border-bottom: 3px solid #efeff0;
-          cursor: pointer;
-          box-sizing: border-box;
-          & span {
+          .town__child__7 {
             width: 600px;
+            height: 60px;
             display: flex;
             flex-flow: row wrap;
-            column-gap: 430px;
-            align-items: center;
-            flex-flow: row-reverse wrap;
+            justify-content: space-between;
+            font-size: 20px;
+            font-family: Iran !important;
+            padding: 40px;
+            font-weight: bold;
+            opacity: 0.9;
+            border-bottom: 3px solid #efeff0;
+            cursor: pointer;
+            box-sizing: border-box;
+            & span {
+              width: 600px;
+              display: flex;
+              flex-flow: row wrap;
+              column-gap: 430px;
+              align-items: center;
+              flex-flow: row-reverse wrap;
+            }
           }
-        }
-        .town__child__8 {
-          width: 600px;
-          height: 60px;
-          display: flex;
-          flex-flow: row wrap;
-          justify-content: space-between;
-          font-size: 20px;
-          font-family: IRANYEKAN;
-          padding: 40px;
-          font-weight: bold;
-          opacity: 0.9;
-          border-bottom: 3px solid #efeff0;
-          cursor: pointer;
-          box-sizing: border-box;
-          & span {
+          .town__child__8 {
             width: 600px;
+            height: 60px;
             display: flex;
             flex-flow: row wrap;
-            column-gap: 410px;
-            align-items: center;
-            flex-flow: row-reverse wrap;
+            justify-content: space-between;
+            font-size: 20px;
+            font-family: Iran !important;
+            padding: 40px;
+            font-weight: bold;
+            opacity: 0.9;
+            border-bottom: 3px solid #efeff0;
+            cursor: pointer;
+            box-sizing: border-box;
+            & span {
+              width: 600px;
+              display: flex;
+              flex-flow: row wrap;
+              column-gap: 410px;
+              align-items: center;
+              flex-flow: row-reverse wrap;
+            }
           }
         }
       }
-    }
-    #show,
-    #close {
-      display: none;
-    }
-    #show:checked ~ .select__town {
-      display: block;
-    }
-    #close:checked ~ .select__town {
-      display: none;
+      #show,
+      #close {
+        display: none;
+      }
+      #show:checked ~ .select__town {
+        display: block;
+      }
+      #close:checked ~ .select__town {
+        display: none;
+      }
     }
   }
 }
+
 .active {
   display: flex !important;
 }

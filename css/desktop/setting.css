@@ -1,32 +1,32 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-:root{
-    --font-family:IRANYEKAN;
-    --font-family-number:BINAZANIN;
-    
-}
-@font-face {
-    font-family: IRANYEKAN;
-    src: url(../../fonts/IRANYekanWeb.eot);
-    src: url(../../fonts/IRANYekanWeb.ttf);
-    src: url(../../fonts/IRANYekanWeb.woff);
-    src: url(../../fonts/IRANYekanWeb.woff2);
+:root {
+  --font-family: IRANYEKAN;
+  --font-family-number: BINAZANIN;
 }
 @font-face {
-    font-family: BINAZANIN;
-    src: url(../../fonts/BNAZANIN/BNazanin.eot);
-    src: url(../../fonts/BNAZANIN/BNazanin.ttf);
-    src: url(../../fonts/BNAZANIN/BNazanin.woff);
-    src: url(../../fonts/BNAZANIN/BNazanin.woff2);
-   
+  font-family: IRANYEKAN;
+  src: url("../../fonts/IRANYekanWeb.eot");
+  src: url("../../fonts/IRANYekanWeb.ttf");
+  src: url("../../fonts/IRANYekanWeb.woff");
+  src: url("../../fonts/IRANYekanWeb.woff2");
+}
+@font-face {
+  font-family: BINAZANIN;
+  src: url("../../fonts/BNAZANIN/BNazanin.eot");
+  src: url("../../fonts/BNAZANIN/BNazanin.ttf");
+  src: url("../../fonts/BNAZANIN/BNazanin.woff");
+  src: url("../../fonts/BNAZANIN/BNazanin.woff2");
 }
 
-html,body{
-    direction: rtl;
+html,
+body {
+  direction: rtl;
+  font-family: IRANYEKAN;
 }
-.wrapper{
-    width: 100%;
+.wrapper {
+  width: 100%;
 }

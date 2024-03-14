@@ -13,27 +13,25 @@
       margin-bottom: 20px;
     }
   }
-  & img{
+  & img {
     width: 150px;
     height: 150px;
-    
   }
-  & h3{
-    width: 195PX;
+  & h3 {
+    width: 195px;
     font-family: BINAZANIN;
     color: #2b2b2b;
   }
-  }
-  .activeselected__wonderfull {
-    background-color: #ef3a50;
-    width: 210px;
-    height: 385px;
-    display: flex;
-    flex-flow: column wrap;
-    & img {
-      display: inline-block;
-      width: 160px;
-      height: 160px;
-    }
+}
+.activeselected__wonderfull {
+  background-color: #ef3a50;
+  width: 210px;
+  height: 385px;
+  display: flex;
+  flex-flow: column wrap;
+  & img {
+    display: inline-block;
+    width: 160px;
+    height: 160px;
   }
 }

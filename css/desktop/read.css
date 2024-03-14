@@ -1,8 +1,7 @@
 .read {
   width: 85%;
-  height: 360px;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
@@ -11,129 +10,127 @@
   .read_top {
     width: 80%;
     height: 50px;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
+    text-align: center;
     & h5 {
-      font-size: 30px;
-      font-family: BINAZANIN;
+      font-size: 20px;
+      font-family: Iran;
     }
   }
-  .read_child_1 {
-    height: 300px;
-    border: 1px solid #e0e0e2;
-     border-radius: 15px;
+  .read_child_container {
     display: flex;
-    flex-flow: column wrap;
-    & a {
+    justify-content: space-between;
+    align-items: center;
+    .read_child_1 {
+      width: 24%;
+      border: 1px solid #e0e0e2;
+      border-radius: 15px;
       display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      align-items: center;
-      & img {
+      flex-flow: column wrap;
+      & a {
         display: flex;
         flex-flow: row wrap;
-        width: 450px;
-        height: 210px;
-        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        & img {
+          display: flex;
+          flex-flow: row wrap;
+          width: 100%;
+          border-radius: 10px;
+        }
+      }
+      & P {
+        padding: 10px;
+        font-size: 15px;
+        text-align: center;
+        font-family: Iran;
+        margin-top: 30px;
+        font-weight: bold;
+        opacity: 0.7;
       }
     }
-    & P {
-        width: 300px;
-      font-size: 18px;
-      font-family: BINAZANIN;
-      margin-top: 30px;
-      font-weight: bold;
-      opacity: 0.7;
-      padding-right: 10px;
+    .read_child_2 {
+      width: 24%;
+      border: 1px solid #e0e0e2;
+      border-radius: 15px;
+      display: flex;
+      flex-flow: column wrap;
+      & a {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        & img {
+          display: flex;
+          flex-flow: row wrap;
+          width: 100%;
+          border-radius: 10px;
+        }
+      }
+      & P {
+        padding: 10px;
+        font-size: 15px;
+        text-align: center;
+        font-family: Iran;
+        margin-top: 30px;
+        font-weight: bold;
+        opacity: 0.7;
+      }
+    }
+    .read_child_3 {
+      width: 24%;
+      border: 1px solid #e0e0e2;
+      border-radius: 15px;
+      display: flex;
+      flex-flow: column wrap;
+      & a {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        & img {
+          display: flex;
+          flex-flow: row wrap;
+          width: 100%;
+          border-radius: 10px;
+        }
+      }
+      & P {
+        padding: 10px;
+        font-size: 15px;
+        text-align: center;
+        font-family: Iran;
+        margin-top: 30px;
+        font-weight: bold;
+        opacity: 0.7;
+      }
+    }
+    .read_child_4 {
+      width: 24%;
+      border: 1px solid #e0e0e2;
+      border-radius: 15px;
+      display: flex;
+      flex-flow: column wrap;
+      & a {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        & img {
+          display: flex;
+          flex-flow: row wrap;
+          width: 100%;
+          border-radius: 10px;
+        }
+      }
+      & P {
+        padding: 10px;
+        font-size: 15px;
+        text-align: center;
+        font-family: Iran;
+        margin-top: 30px;
+        font-weight: bold;
+        opacity: 0.7;
+      }
     }
   }
-  .read_child_2 {
-    height: 300px;
-    border: 1px solid #e0e0e2;
-     border-radius: 15px;
-    display: flex;
-    flex-flow: column wrap;
-    & a {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      align-items: center;
-      & img {
-        display: flex;
-        flex-flow: row wrap;
-        width: 325px;
-        height: 210px;
-        border-radius: 10px;
-      }
-    }
-    & P {
-        width: 300px;
-      font-size: 18px;
-      font-family: BINAZANIN;
-      margin-top: 30px;
-      font-weight: bold;
-      opacity: 0.7;
-      padding-right: 10px;
-    }
-    }
-  .read_child_3 {
-    height: 300px;
-    border: 1px solid #e0e0e2;
-     border-radius: 15px;
-    display: flex;
-    flex-flow: column wrap;
-    & a {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      align-items: center;
-      & img {
-        display: flex;
-        flex-flow: row wrap;
-        width: 325px;
-        height: 210px;
-        border-radius: 10px;
-      }
-    }
-    & P {
-        width: 300px;
-      font-size: 18px;
-      font-family: BINAZANIN;
-      margin-top: 30px;
-      font-weight: bold;
-      opacity: 0.7;
-      padding-right: 10px;
-    }
-    }
-  .read_child_4 {
-    height: 300px;
-    border: 1px solid #e0e0e2;
-     border-radius: 15px;
-    display: flex;
-    flex-flow: column wrap;
-    & a {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      align-items: center;
-      & img {
-        display: flex;
-        flex-flow: row wrap;
-        width: 325px;
-        height: 210px;
-        border-radius: 10px;
-      }
-    }
-    & P {
-        width: 300px;
-      font-size: 18px;
-      font-family: BINAZANIN;
-      margin-top: 30px;
-      font-weight: bold;
-      opacity: 0.7;
-      padding-right: 10px;
-    }
-    }
-  
 }

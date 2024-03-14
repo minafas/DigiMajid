@@ -13,19 +13,20 @@
     justify-content: space-between;
     & a {
       display: flex;
-      flex-flow: row wrap;
-      height: 50px;
-      width: 200px;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-flow: row nowrap;
       border-radius: 10px;
-      color: whitesmoke;
-      font-size: 20px;
+      color: black;
+      font-size: 13px;
       font-weight: bold;
       opacity: 0.8;
-      font-family: BINAZANIN;
-      background-color: #a1a3a8;
+      font-family: Iran;
       text-decoration: none;
-      line-height: 50px;
       justify-content: center;
+      background-color: lightgray;
+      padding: 0 10px;
     }
   }
   .support_digikala {
