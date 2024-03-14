@@ -147,6 +147,8 @@
   }
   .market_gropping_center {
     display: flex;
+    width: 80%;
+    margin: 0 auto;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
@@ -154,7 +156,7 @@
   }
 }
 .market_gropping_bottom {
-  width: 75%;
+  width: 80%;
   display: flex;
   flex-flow: row wrap;
   margin: 0 auto;
